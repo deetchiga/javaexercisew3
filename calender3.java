@@ -1,0 +1,23 @@
+package com.company;
+
+import java.util.Calendar;
+
+public class calender3 {
+    public static void main(String args[])
+    {
+
+    Calendar cal = Calendar.getInstance();
+    System.out.println("\nCurrent Date and Time:" + cal.getTime());
+    int actualMaxYear = cal.getActualMinimum(Calendar.YEAR);
+    int actualMaxMonth = cal.getActualMinimum(Calendar.MONTH);
+    int actualMaxWeek = cal.getActualMinimum(Calendar.WEEK_OF_YEAR);
+    int actualMaxDate = cal.getActualMinimum(Calendar.DATE);
+
+		System.out.println("Actual Minimum Year: "+actualMaxYear);
+		System.out.println("Actual Minimum Month: "+actualMaxMonth);
+		System.out.println("Actual Minimum Week of Year: "+actualMaxWeek);
+		System.out.println("Actual Minimum Date: "+actualMaxDate+"\n");
+		System.out.println();
+}
+}
+
